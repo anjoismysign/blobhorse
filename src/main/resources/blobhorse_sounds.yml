@@ -1,0 +1,6 @@
+BlobHorse:
+  Call:
+    Sound: ENTITY_PARROT_AMBIENT
+    Volume: 1.0
+    Pitch: 1.0
+    Audience: WORLD

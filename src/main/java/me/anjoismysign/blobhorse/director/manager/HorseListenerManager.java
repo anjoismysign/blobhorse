@@ -1,5 +1,7 @@
 package me.anjoismysign.blobhorse.director.manager;
 
+import me.anjoismysign.blobhorse.listener.HorseMountListener;
+import me.anjoismysign.blobhorse.listener.HorseSpawnListener;
 import us.mytheria.bloblib.entities.ListenerManager;
 import me.anjoismysign.blobhorse.director.HorseManagerDirector;
 
@@ -9,7 +11,8 @@ public class HorseListenerManager extends ListenerManager {
     public HorseListenerManager(HorseManagerDirector managerDirector) {
         super(managerDirector);
         this.managerDirector = managerDirector;
-        //add(new HorseListener(this));
+        add(new HorseMountListener(this));
+        add(new HorseSpawnListener(this));
 
         reload();
     }

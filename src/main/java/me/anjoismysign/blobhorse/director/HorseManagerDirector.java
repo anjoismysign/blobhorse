@@ -1,5 +1,6 @@
 package me.anjoismysign.blobhorse.director;
 
+import me.anjoismysign.blobhorse.director.manager.MountManager;
 import org.jetbrains.annotations.NotNull;
 import us.mytheria.bloblib.entities.GenericManagerDirector;
 import me.anjoismysign.blobhorse.BlobHorse;
@@ -14,6 +15,8 @@ public class HorseManagerDirector extends GenericManagerDirector<BlobHorse> {
                 new HorseConfigManager(this));
         addManager("ListenerManager",
                 new HorseListenerManager(this));
+        addManager("MountManager",
+                new MountManager(this));
     }
 
     /**
@@ -33,9 +36,13 @@ public class HorseManagerDirector extends GenericManagerDirector<BlobHorse> {
         return getManager("ConfigManager", HorseConfigManager.class);
     }
 
-
     @NotNull
     public final HorseListenerManager getListenerManager(){
         return getManager("ListenerManager", HorseListenerManager.class);
+    }
+
+    @NotNull
+    public final MountManager getMountManager(){
+        return getManager("MountManager", MountManager.class);
     }
 }

@@ -1,0 +1,7 @@
+BlobHorse:
+  Select:
+    ItemStack:
+      Material: HORSE_SPAWN_EGG
+      ItemName: '&6%key%'
+      Lore:
+        - "&7Click to spawn"

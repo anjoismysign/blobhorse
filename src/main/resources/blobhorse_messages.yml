@@ -1,0 +1,6 @@
+BlobHorse:
+  Not-Owned-Yet:
+    Type: TITLE
+    Title: "&c&lOops"
+    Subtitle: "&7No horses owned yet!"
+    BlobSound: System.Alert

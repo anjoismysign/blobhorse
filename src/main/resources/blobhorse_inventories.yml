@@ -1,0 +1,65 @@
+BlobHorse-Stashed:
+  Title: '&lHORSE STASH'
+  Size: 27
+  Buttons:
+    Background:
+      ItemStack: BlobLib.Background
+      Slot: 0-26
+    Call:
+      ItemStack:
+        Material: GOAT_HORN
+        DisplayName: '&6Call'
+        Lore:
+          - '&7Click to call selected horse'
+      Slot: 12
+    Select:
+      ItemStack:
+        Material: CHEST
+        DisplayName: '&6Select'
+        Lore:
+          - '&7Click to select a horse from stash'
+      Slot: 14
+BlobHorse-Unstashed:
+  Title: '&lHORSE STASH'
+  Size: 27
+  Buttons:
+    Background:
+      ItemStack: BlobLib.Background
+      Slot: 0-26
+    Select:
+      ItemStack:
+        Material: CHEST
+        DisplayName: '&6Select'
+        Lore:
+          - '&7Click to select a horse from stash'
+      Slot: 12
+    PutAway:
+      ItemStack:
+        Material: LEAD
+        DisplayName: '&6Put away'
+        Lore:
+          - '&7Click to put away selected horse'
+      Slot: 14
+HorseSelector:
+  Title: '&lSTASH > SELECT'
+  Size: 27
+  Buttons:
+    Background:
+      ItemStack: BlobLib.Background
+      Slot: 18-26
+    White-Background:
+      ItemStack:
+        Material: WHITE_STAINED_GLASS_PANE
+        HideToolTip: true
+        DisplayName: ' '
+        Lore: []
+      Slot: 0-17
+    Return:
+      ItemStack: BlobLib.Return
+      Slot: 45
+    Previous-Page:
+      ItemStack: BlobLib.Previous-Page
+      Slot: 52
+    Next-Page:
+      ItemStack: BlobLib.Next-Page
+      Slot: 53

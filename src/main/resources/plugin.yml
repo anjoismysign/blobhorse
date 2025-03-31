@@ -4,3 +4,6 @@ main: me.anjoismysign.blobhorse.BlobHorse
 api-version: 1.21
 depend:
   - BlobLib
+commands:
+  blobhorse:
+    description: "main command"
